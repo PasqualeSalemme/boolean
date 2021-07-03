@@ -1,0 +1,79 @@
+body{
+	background-image: url("background.jpg");
+	background-size: cover;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans";
+}
+
+div.container{
+	box-sizing: border-box;
+	margin: auto;
+	width: 60%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 60px;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+header{
+	text-align: center;
+	color: #00dd00;
+}
+
+header img{
+	width: 200px;
+}
+
+header h2{
+	margin: 2px auto;
+}
+
+nav{
+	box-sizing: border-box;
+	background-color: #00dd00;
+	padding: 6px;
+	text-align: center;
+}
+
+nav button{
+	font-size: 10px;
+}
+
+main > div.prodotto{
+	color: white;
+	margin: 15px 0;
+}
+
+div.prodotto > h3{
+	margin: 0;
+	display: inline-block;
+}
+
+div.prodotto span{
+	display: block;
+	font-size: 12px;
+	margin: 3px 0;
+}
+
+/*FRECCIA VERSO DESTRA INDIRIZZO DEI PRODOTTI*/
+div.prodotto h3 + span:before{
+	content: "\21A6";
+}
+
+div.prodotto div:last-child{
+	padding: 12px;
+	border-radius: 4px;
+}
+
+/*BARRA DI CARICA DELLA BATTERIA*/
+div.prodotto:nth-child(1) div:last-child{
+	background-color: #FFB226;
+	width: 30%;
+}
+div.prodotto:nth-child(2) div:last-child{
+	width: 50%;
+	background-color: #00dd00;
+}
+div.prodotto:nth-child(3) div:last-child{
+	width: 13%;
+	background-color: #FF5454;
+}
